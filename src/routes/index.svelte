@@ -26,6 +26,8 @@
 		try editing <strong>src/routes/index.svelte</strong>
 	</h2>
 
+	<h3>Look, an environment variable!: { import.meta.env.VITE_TESTING }</h3>
+
 	<Counter />
 </section>
 
