@@ -1,11 +1,12 @@
 <script context="module" lang="ts">
 	export const prerender = true;
-
-	console.log(process.env.NOT_EXPOSED_TO_CLIENT);
 </script>
 
 <script lang="ts">
+    import { browser } from '$app/env';
 	import Counter from '$lib/Counter/index.svelte';
+
+    if (!browser) console.log(process.env["NOT_EXPOSED_TO_CLIENT"]);
 </script>
 
 <svelte:head>

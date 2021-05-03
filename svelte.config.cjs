@@ -1,7 +1,11 @@
 const preprocess = require('svelte-preprocess');
 const dotenv = require('dotenv');
+const result = dotenv.config({
+    path: "test.env",
+});
 
-dotenv.config();
+if (result.error) throw result.error;
+console.log(result.parsed)
 
 
 /** @type {import('@sveltejs/kit').Config} */
