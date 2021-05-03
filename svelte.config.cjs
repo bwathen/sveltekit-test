@@ -1,4 +1,8 @@
 const preprocess = require('svelte-preprocess');
+const dotenv = require('dotenv');
+
+dotenv.config();
+
 
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {

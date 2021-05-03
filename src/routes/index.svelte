@@ -1,5 +1,7 @@
 <script context="module" lang="ts">
 	export const prerender = true;
+
+	console.log(process.env.NOT_EXPOSED_TO_CLIENT);
 </script>
 
 <script lang="ts">
